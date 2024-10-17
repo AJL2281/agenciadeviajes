@@ -1,0 +1,32 @@
+extends layout/index
+
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Donec lobortis quis justo ut suscipit. Phasellus vehicula neque nec mauris sodales mollis. Morbi nisl velit, aliquam quis auctor id, tristique vitae orci. Cras sit amet consectetur mauris. Cras lacinia viverra ante. Pellentesque ac laoreet ligula, at viverra tellus. Maecenas tempus facilisis orci, et molestie nisl hendrerit sed. Quisque vel neque suscipit, eleifend nibh a, porta nunc.
+                p Vivamus tincidunt dui urna, sed mattis lacus finibus eget. Nulla ut risus sit amet ex dapibus dapibus. Nam vel augue turpis. Mauris pulvinar dolor sapien, a suscipit massa aliquet et. Nulla rhoncus tellus tempus sodales scelerisque. Donec pharetra, velit non viverra viverra, risus nunc commodo arcu, quis venenatis elit sem nec lorem. Nunc porta arcu non leo interdum aliquam.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros" class="img-fluid")
+
+        include ./layout/block_viajes
+
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 22 de Septiembre - 06 de Octubre
+                        p.precio $ 950 USD
+
+    .container
+        h2.mt-5.text-center Opiniones
+        include ./layout/block_opiniones
